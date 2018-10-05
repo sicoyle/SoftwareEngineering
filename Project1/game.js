@@ -54,3 +54,37 @@ const drawBoard = () => {
     }
     console.log("done");
 }
+
+const moves = () => {
+    movePieces();
+}
+
+const movePieces = () => {
+    //Get piece coordinates clicked on
+
+    
+}
+
+const musicToggle = () => {
+    var myAudio = document.getElementById("myAudio");
+    var isPlaying = false;
+
+    togglePlay(isPlaying);
+}
+
+//Function to toggle playing of music
+function togglePlay(isPlaying) {
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
+};
+
+//Functions to pause/play music
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
